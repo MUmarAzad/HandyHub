@@ -1,15 +1,15 @@
-// import { Link } from ReactDOM;
+import { Link } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import '../styles/categories.css';
 
 export default function Categories() {
   const [categories, setCategories] = useState([]);
-  const [services, setServices] = useState({ discounted: []});
+  const [services, setServices] = useState({ discounted: [] });
   const location = useLocation();
 
   useEffect(() => {
-    
+
     fetch('../src/assets/json/categories.json')
       .then((response) => response.json())
       .then((data) => setCategories(data))
@@ -35,7 +35,7 @@ export default function Categories() {
         <h2 className="section-title">Categories</h2>
         <div className="grid grid-cat">
           {categories.map((category, index) => (
-            <a href={category.link} key={index} className="card">
+            <Link to={`/categories/${category.name}`} key={index} className="card">
               <img
                 src={category.image}
                 alt={category.name}
@@ -44,7 +44,7 @@ export default function Categories() {
                 className="card-image"
               />
               <p className="card-title">{category.name}</p>
-            </a>
+            </Link>
           ))}
         </div>
       </section>
@@ -53,7 +53,7 @@ export default function Categories() {
         <h2 className="section-title">Discounted Services</h2>
         <div className="grid grid-cat">
           {services.discounted.map((service, index) => (
-            <a href={service.link} key={index} className="card">
+            <Link to={`/services/${service.id}`} key={index} className="card">
               <img
                 src={service.image}
                 alt={service.name}
@@ -62,7 +62,7 @@ export default function Categories() {
                 className="card-image"
               />
               <p className="card-title">{service.name}</p>
-            </a>
+            </Link>
           ))}
         </div>
       </section>

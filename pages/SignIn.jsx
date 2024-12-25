@@ -1,8 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-
-
+import { Link } from 'react-router-dom'
 import { Mail, Phone, Eye, EyeOff } from 'lucide-react'
 
 export default function Login() {
@@ -13,7 +12,7 @@ export default function Login() {
     <div className="auth-container">
       <div className="auth-content">
         <img
-          src="/placeholder.svg"
+          src="../src/assets/images/logo.svg"
           alt="HandyHub Logo"
           width={100}
           height={100}
@@ -22,9 +21,9 @@ export default function Login() {
         <h2 className="auth-title">Sign in to your account</h2>
         <p className="auth-subtitle">
           Or{' '}
-          <a href="/signup" className="link-primary">
+          <Link to="/signup" className="link-primary">
             create a new account
-          </a>
+          </Link>
         </p>
       </div>
 

@@ -1,42 +1,673 @@
 [
-    { "name": "Plumbing", "image": "/placeholder.svg", "link": "/service/plumbing", "category": "Home maintenance", "discounted": true },
-    { "name": "Carpentry", "image": "/placeholder.svg", "link": "/service/carpentry", "category": "Home maintenance", "discounted": false },
-    { "name": "HVAC", "image": "/placeholder.svg", "link": "/service/hvac", "category": "Home maintenance", "discounted": false },
-    { "name": "Electrical Repairs", "image": "/placeholder.svg", "link": "/service/electrical-repairs", "category": "Home maintenance", "discounted": false },
-    
-    { "name": "CCTV Installation", "image": "/placeholder.svg", "link": "/service/cctv-installation", "category": "Security", "discounted": true },
-    { "name": "Maintenance", "image": "/placeholder.svg", "link": "/service/security-maintenance", "category": "Security", "discounted": false },
-    { "name": "Smartlocks", "image": "/placeholder.svg", "link": "/service/smartlocks", "category": "Security", "discounted": false },
-    { "name": "Security Guards", "image": "/placeholder.svg", "link": "/service/security-guards", "category": "Security", "discounted": false },
-  
-    { "name": "Deep Cleaning", "image": "/placeholder.svg", "link": "/service/deep-cleaning", "category": "Cleaning", "discounted": false },
-    { "name": "Pest Extermination", "image": "/placeholder.svg", "link": "/service/pest-extermination", "category": "Cleaning", "discounted": false },
-    { "name": "Sanitation", "image": "/placeholder.svg", "link": "/service/sanitation", "category": "Cleaning", "discounted": false },
-    { "name": "Waste Disposal", "image": "/placeholder.svg", "link": "/service/waste-disposal", "category": "Cleaning", "discounted": true },
-  
-    { "name": "Vehicle Wash", "image": "/placeholder.svg", "link": "/service/vehicle-wash", "category": "Automotive", "discounted": false },
-    { "name": "Vehicle Detailing", "image": "/placeholder.svg", "link": "/service/vehicle-detailing", "category": "Automotive", "discounted": false },
-    { "name": "Repair", "image": "/placeholder.svg", "link": "/service/car-repair", "category": "Automotive", "discounted": false },
-    { "name": "Roadside Assistance", "image": "/placeholder.svg", "link": "/service/roadside-assistance", "category": "Automotive", "discounted": true },
-  
-    { "name": "Painting", "image": "/placeholder.svg", "link": "/service/painting", "category": "Construction/ Renovation", "discounted": false },
-    { "name": "Flooring", "image": "/placeholder.svg", "link": "/service/flooring", "category": "Construction/ Renovation", "discounted": false },
-    { "name": "Remodeling", "image": "/placeholder.svg", "link": "/service/remodeling", "category": "Construction/ Renovation", "discounted": true },
-    { "name": "Contractor Services", "image": "/placeholder.svg", "link": "/service/contractor-services", "category": "Construction/ Renovation", "discounted": false },
-  
-    { "name": "Servicing", "image": "/placeholder.svg", "link": "/service/servicing", "category": "Appliance Repair", "discounted": true },
-    { "name": "Repairing", "image": "/placeholder.svg", "link": "/service/repairing", "category": "Appliance Repair", "discounted": false },
-    { "name": "Installation", "image": "/placeholder.svg", "link": "/service/installation", "category": "Appliance Repair", "discounted": false },
-    { "name": "AC Repairmen", "image": "/placeholder.svg", "link": "/service/ac-repairmen", "category": "Appliance Repair", "discounted": false },
-  
-    { "name": "Solar Setup", "image": "/placeholder.svg", "link": "/service/solar-setup", "category": "Energy and Utility", "discounted": false },
-    { "name": "Generator Repair", "image": "/placeholder.svg", "link": "/service/generator-repair", "category": "Energy and Utility", "discounted": false },
-    { "name": "Water Pump Installation", "image": "/placeholder.svg", "link": "/service/water-pump-installation", "category": "Energy and Utility", "discounted": false },
-    { "name": "Inverter Installation", "image": "/placeholder.svg", "link": "/service/inverter-installation", "category": "Energy and Utility", "discounted": true },
-  
-    { "name": "Grocery Delivery", "image": "/placeholder.svg", "link": "/service/grocery-delivery", "category": "Delivery", "discounted": false },
-    { "name": "Food and Beverages", "image": "/placeholder.svg", "link": "/service/food-and-beverages", "category": "Delivery", "discounted": false },
-    { "name": "Courier and Logistics", "image": "/placeholder.svg", "link": "/service/courier-logistics", "category": "Delivery", "discounted": true },
-    { "name": "House Movers", "image": "/placeholder.svg", "link": "/service/house-movers", "category": "Delivery", "discounted": false }
-  ]
-  
+    {
+      "id": 1,
+      "name": "Plumbing",
+      "image": "/placeholder.svg",
+      "link": "/service/plumbing",
+      "category": "Home maintenance",
+      "discounted": true,
+      "description": "Our plumbing services cover everything from fixing leaks to installing new systems. Whether you need a repair or an upgrade, our experienced plumbers are here to help.",
+      "rating": 4.5,
+      "features": [
+        "Pipe Repair",
+        "Leak Fixing",
+        "New Installations",
+        "Drain Cleaning"
+      ],
+      "breadcrumbs": [
+        { "text": "Home", "href": "/" },
+        { "text": "Services", "href": "/services" },
+        { "text": "Plumbing" }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Carpentry",
+      "image": "/placeholder.svg",
+      "link": "/service/carpentry",
+      "category": "Home maintenance",
+      "discounted": false,
+      "description": "From custom furniture to intricate woodworking, our carpentry service is perfect for both residential and commercial spaces.",
+      "rating": 4.2,
+      "features": [
+        "Custom Furniture",
+        "Cabinet Installation",
+        "Wood Flooring",
+        "Repairs and Restorations"
+      ],
+      "breadcrumbs": [
+        { "text": "Home", "href": "/" },
+        { "text": "Services", "href": "/services" },
+        { "text": "Carpentry" }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "HVAC",
+      "image": "/placeholder.svg",
+      "link": "/service/hvac",
+      "category": "Home maintenance",
+      "discounted": false,
+      "description": "Ensure your home is always comfortable with our professional heating, ventilation, and air conditioning (HVAC) services. We handle installations, repairs, and regular maintenance.",
+      "rating": 4.7,
+      "features": [
+        "AC Installation",
+        "Heating System Repair",
+        "Regular Maintenance",
+        "Energy Efficiency"
+      ],
+      "breadcrumbs": [
+        { "text": "Home", "href": "/" },
+        { "text": "Services", "href": "/services" },
+        { "text": "HVAC" }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Electrical Repairs",
+      "image": "/placeholder.svg",
+      "link": "/service/electrical-repairs",
+      "category": "Home maintenance",
+      "discounted": false,
+      "description": "Our electricians provide fast and reliable electrical repair services for your home and business, from fixing faulty outlets to rewiring entire buildings.",
+      "rating": 4.3,
+      "features": [
+        "Faulty Wiring Fixes",
+        "Outlet Installation",
+        "Circuit Breaker Replacement",
+        "Home Rewiring"
+      ],
+      "breadcrumbs": [
+        { "text": "Home", "href": "/" },
+        { "text": "Services", "href": "/services" },
+        { "text": "Electrical Repairs" }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "CCTV Installation",
+      "image": "/placeholder.svg",
+      "link": "/service/cctv-installation",
+      "category": "Security",
+      "discounted": true,
+      "description": "Ensure your property's security with professional CCTV installation services. Our experts provide customized setups that ensure maximum surveillance coverage.",
+      "rating": 4.8,
+      "features": [
+        "24/7 Surveillance",
+        "Remote Monitoring",
+        "Customized Systems",
+        "Security Cameras Installation"
+      ],
+      "breadcrumbs": [
+        { "text": "Home", "href": "/" },
+        { "text": "Services", "href": "/services" },
+        { "text": "CCTV Installation" }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Maintenance",
+      "image": "/placeholder.svg",
+      "link": "/service/security-maintenance",
+      "category": "Security",
+      "discounted": false,
+      "description": "We offer regular maintenance for your security systems, ensuring that all components are in optimal working condition, reducing the risk of malfunctions.",
+      "rating": 4.4,
+      "features": [
+        "Routine Inspections",
+        "System Upgrades",
+        "Component Replacements",
+        "Emergency Repairs"
+      ],
+      "breadcrumbs": [
+        { "text": "Home", "href": "/" },
+        { "text": "Services", "href": "/services" },
+        { "text": "Maintenance" }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Smartlocks",
+      "image": "/placeholder.svg",
+      "link": "/service/smartlocks",
+      "category": "Security",
+      "discounted": false,
+      "description": "Upgrade your security with our smart lock installation services. Enjoy keyless entry and enhanced security features for your home or business.",
+      "rating": 4.6,
+      "features": [
+        "Keyless Entry",
+        "Remote Locking",
+        "Battery Powered",
+        "Access Logs"
+      ],
+      "breadcrumbs": [
+        { "text": "Home", "href": "/" },
+        { "text": "Services", "href": "/services" },
+        { "text": "Smartlocks" }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Security Guards",
+      "image": "/placeholder.svg",
+      "link": "/service/security-guards",
+      "category": "Security",
+      "discounted": false,
+      "description": "Our professional security guard services ensure that your premises remain safe and secure. We provide both short-term and long-term security solutions.",
+      "rating": 4.0,
+      "features": [
+        "24/7 On-Site Guards",
+        "Event Security",
+        "Patrol Services",
+        "Alarm Response"
+      ],
+      "breadcrumbs": [
+        { "text": "Home", "href": "/" },
+        { "text": "Services", "href": "/services" },
+        { "text": "Security Guards" }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Deep Cleaning",
+      "image": "/placeholder.svg",
+      "link": "/service/deep-cleaning",
+      "category": "Cleaning",
+      "discounted": false,
+      "description": "Our deep cleaning service goes beyond basic cleaning, ensuring that every corner of your space is spotless and sanitized.",
+      "rating": 4.3,
+      "features": [
+        "Carpet Cleaning",
+        "Wall Washing",
+        "Window Cleaning",
+        "Kitchen & Bathroom Sanitization"
+      ],
+      "breadcrumbs": [
+        { "text": "Home", "href": "/" },
+        { "text": "Services", "href": "/services" },
+        { "text": "Deep Cleaning" }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Pest Extermination",
+      "image": "/placeholder.svg",
+      "link": "/service/pest-extermination",
+      "category": "Cleaning",
+      "discounted": false,
+      "description": "Get rid of pests quickly and safely with our professional pest extermination services. We handle everything from ants to rodents.",
+      "rating": 4.7,
+      "features": [
+        "Rodent Control",
+        "Ant Extermination",
+        "Termite Treatment",
+        "Eco-Friendly Solutions"
+      ],
+      "breadcrumbs": [
+        { "text": "Home", "href": "/" },
+        { "text": "Services", "href": "/services" },
+        { "text": "Pest Extermination" }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Sanitation",
+      "image": "/placeholder.svg",
+      "link": "/service/sanitation",
+      "category": "Cleaning",
+      "discounted": false,
+      "description": "Our sanitation services ensure that your space remains hygienic and free from harmful bacteria and viruses.",
+      "rating": 4.2,
+      "features": [
+        "Disinfection",
+        "Odor Removal",
+        "Sanitation of High-Touch Areas",
+        "Post-Renovation Cleaning"
+      ],
+      "breadcrumbs": [
+        { "text": "Home", "href": "/" },
+        { "text": "Services", "href": "/services" },
+        { "text": "Sanitation" }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Waste Disposal",
+      "image": "/placeholder.svg",
+      "link": "/service/waste-disposal",
+      "category": "Cleaning",
+      "discounted": true,
+      "description": "We offer convenient waste disposal services for homes and businesses, including regular pickups and recycling.",
+      "rating": 4.5,
+      "features": [
+        "Weekly Pickups",
+        "Recycling Services",
+        "Bulk Waste Removal",
+        "Eco-Friendly Disposal"
+      ],
+      "breadcrumbs": [
+        { "text": "Home", "href": "/" },
+        { "text": "Services", "href": "/services" },
+        { "text": "Waste Disposal" }
+      ]
+    },
+    {
+        "id": 13,
+        "name": "Vehicle Wash",
+        "image": "/placeholder.svg",
+        "link": "/service/vehicle-wash",
+        "category": "Automotive",
+        "discounted": false,
+        "description": "Keep your vehicle looking brand new with our professional vehicle wash services. We offer exterior and interior cleaning to ensure your car shines from every angle.",
+        "rating": 4.4,
+        "features": [
+          "Exterior Wash",
+          "Interior Cleaning",
+          "Waxing",
+          "Wheel and Tire Cleaning"
+        ],
+        "breadcrumbs": [
+          { "text": "Home", "href": "/" },
+          { "text": "Services", "href": "/services" },
+          { "text": "Vehicle Wash" }
+        ]
+      },
+      {
+        "id": 14,
+        "name": "Vehicle Detailing",
+        "image": "/placeholder.svg",
+        "link": "/service/vehicle-detailing",
+        "category": "Automotive",
+        "discounted": false,
+        "description": "Our vehicle detailing service offers deep cleaning and restoration for both the interior and exterior of your car, bringing back its original shine and cleanliness.",
+        "rating": 4.6,
+        "features": [
+          "Interior Detailing",
+          "Exterior Polishing",
+          "Engine Bay Cleaning",
+          "Odor Removal"
+        ],
+        "breadcrumbs": [
+          { "text": "Home", "href": "/" },
+          { "text": "Services", "href": "/services" },
+          { "text": "Vehicle Detailing" }
+        ]
+      },
+      {
+        "id": 15,
+        "name": "Repair",
+        "image": "/placeholder.svg",
+        "link": "/service/car-repair",
+        "category": "Automotive",
+        "discounted": false,
+        "description": "Our expert auto repair services cover everything from minor fixes to major mechanical and electrical repairs. Trust us to get your vehicle back on the road safely.",
+        "rating": 4.3,
+        "features": [
+          "Engine Repair",
+          "Brake Replacement",
+          "Transmission Repair",
+          "Suspension Work"
+        ],
+        "breadcrumbs": [
+          { "text": "Home", "href": "/" },
+          { "text": "Services", "href": "/services" },
+          { "text": "Car Repair" }
+        ]
+      },
+      {
+        "id": 16,
+        "name": "Roadside Assistance",
+        "image": "/placeholder.svg",
+        "link": "/service/roadside-assistance",
+        "category": "Automotive",
+        "discounted": true,
+        "description": "Stuck on the side of the road? Our roadside assistance service provides fast help for tire changes, jump-starts, lockouts, and more, no matter where you are.",
+        "rating": 4.8,
+        "features": [
+          "Tire Change",
+          "Battery Jump-Start",
+          "Lockout Assistance",
+          "Fuel Delivery"
+        ],
+        "breadcrumbs": [
+          { "text": "Home", "href": "/" },
+          { "text": "Services", "href": "/services" },
+          { "text": "Roadside Assistance" }
+        ]
+      },
+      {
+        "id": 17,
+        "name": "Painting",
+        "image": "/placeholder.svg",
+        "link": "/service/painting",
+        "category": "Construction/ Renovation",
+        "discounted": false,
+        "description": "Enhance the look of your space with professional painting services. We offer both interior and exterior painting to give your home or office a fresh, vibrant look.",
+        "rating": 4.5,
+        "features": [
+          "Interior Painting",
+          "Exterior Painting",
+          "Wall Prep and Priming",
+          "Custom Color Selection"
+        ],
+        "breadcrumbs": [
+          { "text": "Home", "href": "/" },
+          { "text": "Services", "href": "/services" },
+          { "text": "Painting" }
+        ]
+      },
+      {
+        "id": 18,
+        "name": "Flooring",
+        "image": "/placeholder.svg",
+        "link": "/service/flooring",
+        "category": "Construction/ Renovation",
+        "discounted": false,
+        "description": "Upgrade your floors with our professional flooring installation services. We offer hardwood, tile, laminate, and more, ensuring the perfect fit for your home or office.",
+        "rating": 4.4,
+        "features": [
+          "Hardwood Flooring",
+          "Tile Installation",
+          "Laminate Flooring",
+          "Carpet Installation"
+        ],
+        "breadcrumbs": [
+          { "text": "Home", "href": "/" },
+          { "text": "Services", "href": "/services" },
+          { "text": "Flooring" }
+        ]
+      },
+      {
+        "id": 19,
+        "name": "Remodeling",
+        "image": "/placeholder.svg",
+        "link": "/service/remodeling",
+        "category": "Construction/ Renovation",
+        "discounted": false,
+        "description": "Transform your space with our full remodeling services. We specialize in kitchen, bathroom, and entire home renovations that will bring new life to your property.",
+        "rating": 4.6,
+        "features": [
+          "Kitchen Remodeling",
+          "Bathroom Renovations",
+          "Whole House Renovations",
+          "Custom Designs"
+        ],
+        "breadcrumbs": [
+          { "text": "Home", "href": "/" },
+          { "text": "Services", "href": "/services" },
+          { "text": "Remodeling" }
+        ]
+      },
+      {
+        "id": 20,
+        "name": "Contractor Services",
+        "image": "/placeholder.svg",
+        "link": "/service/contractor-services",
+        "category": "Construction/ Renovation",
+        "discounted": false,
+        "description": "Our contractor services provide expert assistance for all your construction and renovation projects. We have a network of qualified professionals to handle any job.",
+        "rating": 4.5,
+        "features": [
+          "Project Management",
+          "General Contracting",
+          "Site Preparation",
+          "Construction and Renovation"
+        ],
+        "breadcrumbs": [
+          { "text": "Home", "href": "/" },
+          { "text": "Services", "href": "/services" },
+          { "text": "Contractor Services" }
+        ]
+      },
+      {
+        "id": 21,
+        "name": "Servicing",
+        "image": "/placeholder.svg",
+        "link": "/service/servicing",
+        "category": "Appliance Repair",
+        "discounted": true,
+        "description": "Keep your appliances in top condition with our servicing and maintenance services. We cover everything from refrigerators to dishwashers, ensuring they run smoothly.",
+        "rating": 4.7,
+        "features": [
+          "Refrigerator Servicing",
+          "Dishwasher Servicing",
+          "Washing Machine Maintenance",
+          "Oven Repair"
+        ],
+        "breadcrumbs": [
+          { "text": "Home", "href": "/" },
+          { "text": "Services", "href": "/services" },
+          { "text": "Servicing" }
+        ]
+      },
+      {
+        "id": 22,
+        "name": "Repairing",
+        "image": "/placeholder.svg",
+        "link": "/service/repairing",
+        "category": "Appliance Repair",
+        "discounted": false,
+        "description": "Our appliance repair services are fast, reliable, and affordable. Whether it's a malfunctioning refrigerator or a broken washing machine, we can fix it.",
+        "rating": 4.3,
+        "features": [
+          "Refrigerator Repair",
+          "Washing Machine Repair",
+          "Oven Repair",
+          "Dishwasher Repair"
+        ],
+        "breadcrumbs": [
+          { "text": "Home", "href": "/" },
+          { "text": "Services", "href": "/services" },
+          { "text": "Repairing" }
+        ]
+      },
+      {
+        "id": 23,
+        "name": "Installation",
+        "image": "/placeholder.svg",
+        "link": "/service/installation",
+        "category": "Appliance Repair",
+        "discounted": false,
+        "description": "We offer professional appliance installation services, from new refrigerators to washing machines and more. We ensure proper setup for optimal performance.",
+        "rating": 4.4,
+        "features": [
+          "Refrigerator Installation",
+          "Washing Machine Installation",
+          "Oven Installation",
+          "Dishwasher Setup"
+        ],
+        "breadcrumbs": [
+          { "text": "Home", "href": "/" },
+          { "text": "Services", "href": "/services" },
+          { "text": "Installation" }
+        ]
+      },
+      {
+        "id": 24,
+        "name": "AC Repairmen",
+        "image": "/placeholder.svg",
+        "link": "/service/ac-repairmen",
+        "category": "Appliance Repair",
+        "discounted": false,
+        "description": "Ensure your air conditioner runs efficiently with our expert AC repair services. We handle all types of repairs, including maintenance and installation.",
+        "rating": 4.5,
+        "features": [
+          "AC Repair",
+          "Routine Maintenance",
+          "Installation",
+          "Energy Efficiency Optimization"
+        ],
+        "breadcrumbs": [
+          { "text": "Home", "href": "/" },
+          { "text": "Services", "href": "/services" },
+          { "text": "AC Repairmen" }
+        ]
+      },
+      {
+        "id": 25,
+        "name": "Solar Setup",
+        "image": "/placeholder.svg",
+        "link": "/service/solar-setup",
+        "category": "Energy and Utility",
+        "discounted": false,
+        "description": "Save on energy bills and help the environment with our solar setup services. We provide professional installation and maintenance of solar panels for residential and commercial properties.",
+        "rating": 4.3,
+        "features": [
+          "Solar Panel Installation",
+          "Battery Storage Solutions",
+          "System Design",
+          "Maintenance"
+        ],
+        "breadcrumbs": [
+          { "text": "Home", "href": "/" },
+          { "text": "Services", "href": "/services" },
+          { "text": "Solar Setup" }
+        ]
+      },
+      {
+        "id": 26,
+        "name": "Generator Repair",
+        "image": "/placeholder.svg",
+        "link": "/service/generator-repair",
+        "category": "Energy and Utility",
+        "discounted": false,
+        "description": "Our generator repair service ensures that your backup power system stays in top working condition. Whether for residential or commercial use, we can fix any issues quickly.",
+        "rating": 4.2,
+        "features": [
+          "Generator Maintenance",
+          "Fuel System Repairs",
+          "Battery and Charging Repairs",
+          "Load Testing"
+        ],
+        "breadcrumbs": [
+          { "text": "Home", "href": "/" },
+          { "text": "Services", "href": "/services" },
+          { "text": "Generator Repair" }
+        ]
+      },
+      {
+        "id": 27,
+        "name": "Water Pump Installation",
+        "image": "/placeholder.svg",
+        "link": "/service/water-pump-installation",
+        "category": "Energy and Utility",
+        "discounted": false,
+        "description": "Ensure your water supply is reliable with our water pump installation services. We provide fast and efficient installation for residential and commercial properties.",
+        "rating": 4.5,
+        "features": [
+          "Well Pump Installation",
+          "Submersible Pump Installation",
+          "Maintenance"
+        ],
+        "breadcrumbs": [
+          { "text": "Home", "href": "/" },
+          { "text": "Services", "href": "/services" },
+          { "text": "Water Pump Installation" }
+        ]
+      },
+      {
+        "id": 28,
+        "name": "Inverter Installation",
+        "image": "/placeholder.svg",
+        "link": "/service/inverter-installation",
+        "category": "Energy and Utility",
+        "discounted": true,
+        "description": "Get energy-efficient power backup with our inverter installation services. We install and maintain inverters for homes and businesses to ensure uninterrupted power supply.",
+        "rating": 4.7,
+        "features": [
+          "Inverter Setup",
+          "Battery Integration",
+          "Maintenance",
+          "Energy Efficiency Optimization"
+        ],
+        "breadcrumbs": [
+          { "text": "Home", "href": "/" },
+          { "text": "Services", "href": "/services" },
+          { "text": "Inverter Installation" }
+        ]
+      },
+      {
+        "id": 29,
+        "name": "Grocery Delivery",
+        "image": "/placeholder.svg",
+        "link": "/service/grocery-delivery",
+        "category": "Delivery",
+        "discounted": false,
+        "description": "Get your groceries delivered right to your doorstep. We offer fast and reliable grocery delivery services, making sure you get fresh produce and everyday essentials.",
+        "rating": 4.2,
+        "features": [
+          "Fresh Produce",
+          "Grocery Shopping",
+          "Same-Day Delivery",
+          "Contactless Delivery"
+        ],
+        "breadcrumbs": [
+          { "text": "Home", "href": "/" },
+          { "text": "Services", "href": "/services" },
+          { "text": "Grocery Delivery" }
+        ]
+      },
+      {
+        "id": 30,
+        "name": "Food and Beverages",
+        "image": "/placeholder.svg",
+        "link": "/service/food-and-beverages",
+        "category": "Delivery",
+        "discounted": false,
+        "description": "Order food and beverages from your favorite restaurants and have it delivered to your doorstep. We provide fast, reliable, and contactless delivery.",
+        "rating": 4.4,
+        "features": [
+          "Restaurant Food Delivery",
+          "Beverage Delivery",
+          "Same-Day Service",
+          "Cash on Delivery"
+        ],
+        "breadcrumbs": [
+          { "text": "Home", "href": "/" },
+          { "text": "Services", "href": "/services" },
+          { "text": "Food and Beverages" }
+        ]
+      },
+      {
+        "id": 31,
+        "name": "Courier and Logistics",
+        "image": "/placeholder.svg",
+        "link": "/service/courier-logistics",
+        "category": "Delivery",
+        "discounted": false,
+        "description": "We provide courier and logistics services to ensure fast and reliable delivery of packages and parcels. Trust us for local, national, and international shipping.",
+        "rating": 4.3,
+        "features": [
+          "Same-Day Delivery",
+          "International Shipping",
+          "Package Tracking",
+          "Courier Pickup"
+        ],
+        "breadcrumbs": [
+          { "text": "Home", "href": "/" },
+          { "text": "Services", "href": "/services" },
+          { "text": "Courier and Logistics" }
+        ]
+      },
+      {
+        "id": 32,
+        "name": "House Movers",
+        "image": "/placeholder.svg",
+        "link": "/service/house-movers",
+        "category": "Delivery",
+        "discounted": true,
+        "description": "Our house movers service ensures a smooth and stress-free moving experience. We handle everything from packing to transporting, so you can focus on settling in.",
+        "rating": 4.8,
+        "features": [
+          "Packing Services",
+          "Furniture Moving",
+          "Storage Solutions",
+          "Unpacking and Setup"
+        ],
+        "breadcrumbs": [
+          { "text": "Home", "href": "/" },
+          { "text": "Services", "href": "/services" },
+          { "text": "House Movers" }
+        ]
+      }
+    ]

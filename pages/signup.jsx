@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-
+import { Link } from 'react-router-dom'
 import { Mail, Phone, Eye, EyeOff } from 'lucide-react'
 
 export default function Signup() {
@@ -21,9 +21,9 @@ export default function Signup() {
         <h2 className="auth-title">Create your account</h2>
         <p className="auth-subtitle">
           Or{' '}
-          <a href="/login" className="link-primary">
+          <Link to="/signin" className="link-primary">
             sign in to your existing account
-          </a>
+          </Link>
         </p>
       </div>
 

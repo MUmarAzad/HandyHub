@@ -12,6 +12,9 @@ import HowItWorks from '../pages/how-it-works.jsx'
 import AboutUs from '../pages/about-us.jsx'
 import Contact from '../pages/contact.jsx'
 import SignUp from '../pages/signup.jsx'
+import SignIn from '../pages/SignIn.jsx'
+import Category from '../pages/categories/services.jsx'
+import Services from '../pages/service-page.jsx'
 import { Layout } from '../components/layout.jsx'
 import {
   createBrowserRouter,
@@ -57,15 +60,34 @@ const router = createBrowserRouter([
       <Layout>
         <SignUp />
       </Layout>,
+  },{
+    path: "signin",
+    element:
+      <Layout>
+        <SignIn />
+      </Layout>,
+  },{
+    path: "services/:serviceId",
+    element:
+      <Layout>
+        <Services />
+      </Layout>,
+  },{
+    path: "categories/:category",
+    element:
+      <Layout>
+        <Category />
+      </Layout>,
   },
 ]);
 
 createRoot(document.getElementById('root')).render(
-  // <StrictMode>
+  <StrictMode>
+    <RouterProvider router={router} />
+  </StrictMode>,
+)
+
   //   {/* <App /> */}
   //   <Layout>
   //     <Home />
   //   </Layout>
-  // </StrictMode>,
-  <RouterProvider router={router} />
-)
