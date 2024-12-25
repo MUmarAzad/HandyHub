@@ -1,17 +1,16 @@
+import { useParams } from 'react-router-dom';
+import { Star, Clock, DollarSign } from 'lucide-react';
+import servicesData from '../src/assets/json/services.json';
 
+export default function ServicePage() {
+  const { serviceId } = useParams(); // Get the `serviceId` from URL params
+  const service = servicesData.find(s => s.id === parseInt(serviceId));
 
-import { Star, Clock, DollarSign } from 'lucide-react'
+  console.log(serviceId);
+  if (!service) return <p>Service not found</p>;
 
-export default function ServicePage({
-  title,
-  description,
-  image,
-  rating,
-  duration,
-  price,
-  features,
-  breadcrumbs
-}) {
+  const { title, description, image, rating, duration, price, features, breadcrumbs } = service;
+
   return (
     <div className="container mx-auto px-4 py-8">
       <nav className="text-sm mb-6">
@@ -69,6 +68,5 @@ export default function ServicePage({
         </div>
       </div>
     </div>
-  )
+  );
 }
-
