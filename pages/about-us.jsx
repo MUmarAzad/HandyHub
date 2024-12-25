@@ -3,7 +3,7 @@
 export default function AboutUs() {
   return (
     <div className="container">
-      <h1 className="page-title">About HandyHub</h1>
+      {/* <h1 className="page-title">About HandyHub</h1> */}
       
       <section className="section">
         <div className="grid">

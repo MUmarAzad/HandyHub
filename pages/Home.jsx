@@ -6,8 +6,8 @@ export default function Home() {
   return (
     <div className="container">
       <section className="section hero grid">
-        <div class="hero home">
-          <div calss="hero content">
+        <div className="hero home">
+          <div className="hero content">
             <h1 className="section-title">Discover Reliable Home Services With HandyHub!</h1>
             <p className="hero-description">We are your one-stop platform for diverse services</p>
             <div className="button-group">
