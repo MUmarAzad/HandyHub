@@ -1,0 +1,60 @@
+/* breadcrumbs.css */
+
+/* Container for the breadcrumbs */
+.breadcrumbs-container {
+    margin: 20px 0;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  /* The breadcrumb list */
+  .breadcrumbs-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  /* Each breadcrumb item */
+  .breadcrumb-item {
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  /* Breadcrumb separator (>) */
+  .breadcrumb-separator {
+    margin: 0 8px;
+    color: #999;
+  }
+  
+  /* Styling for the breadcrumb links */
+  .breadcrumb-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .breadcrumb-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  
+  /* Styling for the last breadcrumb (non-link) */
+  .breadcrumb-text {
+    color: #777;
+    font-weight: normal;
+  }
+  
+  /* Responsive style */
+  @media (max-width: 768px) {
+    .breadcrumbs-container {
+      font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+    .breadcrumb-item {
+      flex-wrap: wrap;
+      margin-bottom: 5px; /* Space between breadcrumb items */
+    }
+  }
+  

@@ -27,15 +27,15 @@ export default function Categories() {
   return (
     <div className="container-cat">
       <section className="section hero-cat">
-        <h1 className="section-title">Explore Our Services</h1>
-        <p className="hero-description">Find the perfect service for your needs</p>
+        {/* <h1 className="section-title">Explore Our Services</h1>
+        <p className="hero-description">Find the perfect service for your needs</p> */}
       </section>
 
       <section className="section">
         <h2 className="section-title">Categories</h2>
         <div className="grid grid-cat">
           {categories.map((category, index) => (
-            <Link to={`/categories/${category.name}`} key={index} className="card">
+            <Link to={`/categories/${category.name.toLowerCase()}`} key={index} className="card">
               <img
                 src={category.image}
                 alt={category.name}
@@ -53,7 +53,7 @@ export default function Categories() {
         <h2 className="section-title">Discounted Services</h2>
         <div className="grid grid-cat">
           {services.discounted.map((service, index) => (
-            <Link to={`/categories/${service.category}/${service.id}`} key={index} className="card">
+            <Link to={`/categories/${service.category.toLowerCase()}/${service.name.toLowerCase()}`} key={index} className="card">
               <img
                 src={service.image}
                 alt={service.name}
