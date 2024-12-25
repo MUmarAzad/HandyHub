@@ -53,7 +53,7 @@ export default function Categories() {
         <h2 className="section-title">Discounted Services</h2>
         <div className="grid grid-cat">
           {services.discounted.map((service, index) => (
-            <Link to={`/services/${service.id}`} key={index} className="card">
+            <Link to={`/categories/${service.category}/${service.id}`} key={index} className="card">
               <img
                 src={service.image}
                 alt={service.name}

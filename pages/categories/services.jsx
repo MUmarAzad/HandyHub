@@ -24,7 +24,7 @@ export default function Services() {
 
   return (
     <div className="container">
-      <h1 className="page-title">{category} Services</h1>
+      {/* <h1 className="page-title">{category} Services</h1> */}
 
       <section className="section">
         <h2 className="section-title">Services</h2>

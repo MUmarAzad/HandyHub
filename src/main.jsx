@@ -67,7 +67,7 @@ const router = createBrowserRouter([
         <SignIn />
       </Layout>,
   },{
-    path: "services/:serviceId",
+    path: "categories/c:category/:serviceId",
     element:
       <Layout>
         <Services />
