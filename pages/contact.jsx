@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
     <div className="container">
-      <h1 className="page-title">Contact Us</h1>
+      {/* <h1 className="page-title">Contact Us</h1> */}
       
       <section className="section">
         <h2 className="section-title">Get in Touch</h2>

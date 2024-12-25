@@ -3,7 +3,7 @@
 export default function HowItWorks() {
   return (
     <div className="container">
-      <h1 className="page-title">How HandyHub Works</h1>
+      {/* <h1 className="page-title">How HandyHub Works</h1> */}
       
       <section className="section">
         <h2 className="section-title">Simple Steps to Get Started</h2>

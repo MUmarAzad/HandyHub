@@ -6,8 +6,8 @@ export default function Home() {
   return (
     <div className="container">
       <section className="section hero grid">
-        <div class="hero home">
-          <div calss="hero content">
+        <div className="hero home">
+          <div className="hero content">
             <h1 className="section-title">Discover Reliable Home Services With HandyHub!</h1>
             <p className="hero-description">We are your one-stop platform for diverse services</p>
             <div className="button-group">
@@ -16,8 +16,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="hero image">
-          <img src={ heroImg } alt="A working person" />
+        <div className="about-img-container">
+          <img className='hero-img' src={ heroImg } alt="A working person"/>
         </div>
       </section>
 
@@ -64,8 +64,8 @@ export default function Home() {
               <p>Master mind behind siolving ur problems whether you are stuck or need a free of cost pizza... just give us a call... we wont pick up</p>
               <a href="/learn-more" className="button secondary">Learn more.</a>
             </div>
-            <div>
-              <img src="../src/assets/images/explore-img.svg" alt="Explore HandyHub" width={400} height={300} className="explore-img" />
+            <div className='about-img-container'>
+              <img className="explore-img" src="../src/assets/images/explore-img.svg" alt="Explore HandyHub" width={400} height={300} />
             </div>
           </div>
       </section>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
+import Breadcrumbs from '../components/Breadcrumbs.jsx';
 
 export default function Services() {
   const { category } = useParams();  // Get the category from the URL using useParams
@@ -24,17 +25,18 @@ export default function Services() {
 
   return (
     <div className="container">
-      <h1 className="page-title">{category} Services</h1>
+      <Breadcrumbs location={location} />
+      {/* <h1 className="page-title">{category} Services</h1> */}
 
       <section className="section">
         <h2 className="section-title">Services</h2>
         <div className="service-grid">
           {services.length > 0 ? (
             services.map((service, index) => (
-              <a href={`/service/${service.name.toLowerCase().replace(' ', '-')}`} key={index} className="service-card">
+              <Link to={`/categories/${service.category.toLowerCase()}/${service.name.toLowerCase()}`} key={index} className="service-card">
                 <img src={service.image} alt={service.name} width={200} height={200} className="service-image" />
                 <p className="service-name">{service.name}</p>
-              </a>
+              </Link>
             ))
           ) : (
             <p>No services available for this category.</p>

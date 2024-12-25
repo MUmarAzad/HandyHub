@@ -3,7 +3,7 @@
     { "name": "Security", "image": "../src/assets/images/security-img.svg", "link": "/categories/security.jsx" },
     { "name": "Cleaning", "image": "../src/assets/images/cleaning-img.svg", "link": "/categories/cleaning.jsx" },
     { "name": "Automotive", "image": "../src/assets/images/automotive-img.svg", "link": "/categories/automotive.jsx" },
-    { "name": "Construction/ Renovation", "image": "../src/assets/images/construct-img.svg", "link": "/categories/construction-renovation.jsx" },
+    { "name": "Construction", "image": "../src/assets/images/construct-img.svg", "link": "/categories/construction-renovation.jsx" },
     { "name": "Appliance Repair", "image": "../src/assets/images/appliance-img.svg", "link": "/categories/appliance-repair.jsx" },
     { "name": "Energy and Utility", "image": "../src/assets/images/energy-img.svg", "link": "/categories/energy-and-utility.jsx" },
     { "name": "Delivery", "image": "../src/assets/images/delivery-img.svg", "link": "/categories/delivery.jsx" }

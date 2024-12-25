@@ -5,6 +5,7 @@ import '../styles/globals.css'
 import '../styles/home.css'
 import '../styles/auth.css'
 import '../styles/categories.css'
+import '../styles/breadcrumbs.css';
 import App from './App.jsx'
 import Home from '../pages/Home.jsx'
 import Categories from '../pages/categories.jsx'
@@ -13,8 +14,8 @@ import AboutUs from '../pages/about-us.jsx'
 import Contact from '../pages/contact.jsx'
 import SignUp from '../pages/signup.jsx'
 import SignIn from '../pages/SignIn.jsx'
-import Category from '../pages/categories/services.jsx'
-import Services from '../pages/service-page.jsx'
+import Services from '../pages/services.jsx'
+import ServicePage from '../pages/service-page.jsx'
 import { Layout } from '../components/layout.jsx'
 import {
   createBrowserRouter,
@@ -67,16 +68,16 @@ const router = createBrowserRouter([
         <SignIn />
       </Layout>,
   },{
-    path: "services/:serviceId",
+    path: "categories/:category",
     element:
       <Layout>
         <Services />
       </Layout>,
   },{
-    path: "categories/:category",
+    path: "categories/:category/:serviceName",
     element:
       <Layout>
-        <Category />
+        <ServicePage />
       </Layout>,
   },
 ]);
