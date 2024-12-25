@@ -1,0 +1,42 @@
+[
+    { "name": "Plumbing", "image": "/placeholder.svg", "link": "/service/plumbing", "category": "Home maintenance", "discounted": true },
+    { "name": "Carpentry", "image": "/placeholder.svg", "link": "/service/carpentry", "category": "Home maintenance", "discounted": false },
+    { "name": "HVAC", "image": "/placeholder.svg", "link": "/service/hvac", "category": "Home maintenance", "discounted": false },
+    { "name": "Electrical Repairs", "image": "/placeholder.svg", "link": "/service/electrical-repairs", "category": "Home maintenance", "discounted": false },
+    
+    { "name": "CCTV Installation", "image": "/placeholder.svg", "link": "/service/cctv-installation", "category": "Security", "discounted": true },
+    { "name": "Maintenance", "image": "/placeholder.svg", "link": "/service/security-maintenance", "category": "Security", "discounted": false },
+    { "name": "Smartlocks", "image": "/placeholder.svg", "link": "/service/smartlocks", "category": "Security", "discounted": false },
+    { "name": "Security Guards", "image": "/placeholder.svg", "link": "/service/security-guards", "category": "Security", "discounted": false },
+  
+    { "name": "Deep Cleaning", "image": "/placeholder.svg", "link": "/service/deep-cleaning", "category": "Cleaning", "discounted": false },
+    { "name": "Pest Extermination", "image": "/placeholder.svg", "link": "/service/pest-extermination", "category": "Cleaning", "discounted": false },
+    { "name": "Sanitation", "image": "/placeholder.svg", "link": "/service/sanitation", "category": "Cleaning", "discounted": false },
+    { "name": "Waste Disposal", "image": "/placeholder.svg", "link": "/service/waste-disposal", "category": "Cleaning", "discounted": true },
+  
+    { "name": "Vehicle Wash", "image": "/placeholder.svg", "link": "/service/vehicle-wash", "category": "Automotive", "discounted": false },
+    { "name": "Vehicle Detailing", "image": "/placeholder.svg", "link": "/service/vehicle-detailing", "category": "Automotive", "discounted": false },
+    { "name": "Repair", "image": "/placeholder.svg", "link": "/service/car-repair", "category": "Automotive", "discounted": false },
+    { "name": "Roadside Assistance", "image": "/placeholder.svg", "link": "/service/roadside-assistance", "category": "Automotive", "discounted": true },
+  
+    { "name": "Painting", "image": "/placeholder.svg", "link": "/service/painting", "category": "Construction/ Renovation", "discounted": false },
+    { "name": "Flooring", "image": "/placeholder.svg", "link": "/service/flooring", "category": "Construction/ Renovation", "discounted": false },
+    { "name": "Remodeling", "image": "/placeholder.svg", "link": "/service/remodeling", "category": "Construction/ Renovation", "discounted": true },
+    { "name": "Contractor Services", "image": "/placeholder.svg", "link": "/service/contractor-services", "category": "Construction/ Renovation", "discounted": false },
+  
+    { "name": "Servicing", "image": "/placeholder.svg", "link": "/service/servicing", "category": "Appliance Repair", "discounted": true },
+    { "name": "Repairing", "image": "/placeholder.svg", "link": "/service/repairing", "category": "Appliance Repair", "discounted": false },
+    { "name": "Installation", "image": "/placeholder.svg", "link": "/service/installation", "category": "Appliance Repair", "discounted": false },
+    { "name": "AC Repairmen", "image": "/placeholder.svg", "link": "/service/ac-repairmen", "category": "Appliance Repair", "discounted": false },
+  
+    { "name": "Solar Setup", "image": "/placeholder.svg", "link": "/service/solar-setup", "category": "Energy and Utility", "discounted": false },
+    { "name": "Generator Repair", "image": "/placeholder.svg", "link": "/service/generator-repair", "category": "Energy and Utility", "discounted": false },
+    { "name": "Water Pump Installation", "image": "/placeholder.svg", "link": "/service/water-pump-installation", "category": "Energy and Utility", "discounted": false },
+    { "name": "Inverter Installation", "image": "/placeholder.svg", "link": "/service/inverter-installation", "category": "Energy and Utility", "discounted": true },
+  
+    { "name": "Grocery Delivery", "image": "/placeholder.svg", "link": "/service/grocery-delivery", "category": "Delivery", "discounted": false },
+    { "name": "Food and Beverages", "image": "/placeholder.svg", "link": "/service/food-and-beverages", "category": "Delivery", "discounted": false },
+    { "name": "Courier and Logistics", "image": "/placeholder.svg", "link": "/service/courier-logistics", "category": "Delivery", "discounted": true },
+    { "name": "House Movers", "image": "/placeholder.svg", "link": "/service/house-movers", "category": "Delivery", "discounted": false }
+  ]
+  
